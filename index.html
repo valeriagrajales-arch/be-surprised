@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f2e8">
+  <meta name="description" content="Be Surprised: pequeñas bolsitas, grandes emociones. Descubre sorpresas llenas de nostalgia, diversión y misterio.">
+  <title>Be Surprised | Pequeñas bolsitas, grandes emociones</title>
+  <link rel="icon" href="img/logoicono.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#inicio" class="logo" aria-label="Be Surprised, inicio">
+        <!-- Puedes reemplazar este logo de texto por tu archivo: img/logo-be-surprised.png -->
+        <span class="logo-bag" aria-hidden="true">?</span>
+        <span class="logo-words">Be <b>Surprised</b></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#mayoristas">Pedidos al por mayor</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="cart-button" id="openCart" aria-label="Abrir carrito">
+        <span aria-hidden="true">🛒</span><span>Carrito</span><span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">UN PEQUEÑO VIAJE A LA INFANCIA</span>
+          <h1>Pequeñas bolsitas,<br><span>grandes emociones.</span></h1>
+          <p>¿Recuerdas esa emoción de comprar algo sin saber qué te iba a tocar? En Be Surprised la convertimos en una experiencia llena de nostalgia, curiosidad y pequeños tesoros.</p>
+          <div class="hero-actions">
+            <a class="button button-pink" href="#catalogo">Explorar sorpresas <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#mayoristas">¿Tienes un negocio o evento?</a>
+          </div>
+          <div class="hero-notes"><span>✦ Cada bolsa es diferente</span><span>✦ La intriga es parte del regalo</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustración de una bolsita kraft sorpresa">
+          <div class="spark spark-one">✳</div><div class="spark spark-two">✦</div>
+          <div class="mystery-bag">
+            <div class="bag-fold"></div><div class="bag-question">?</div>
+            <div class="bag-brand">Be <b>Surprised</b></div>
+          </div>
+          <div class="price-sticker">¡¿Qué<br>habrá<br>dentro?!</div>
+          <div class="hero-caption">Abre la bolsa.<br>Descubre la magia.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-strip" aria-label="Lo que nos hace especiales">
+      <article><span class="value-icon yellow">☆</span><h2>Nostalgia</h2><p>Revive la emoción de los pequeños tesoros de antes.</p></article>
+      <article><span class="value-icon pink">♡</span><h2>Exclusividad</h2><p>No sabes qué hay dentro: cada descubrimiento se siente único.</p></article>
+      <article><span class="value-icon mint">✦</span><h2>Diversión</h2><p>Una sorpresa para regalar, coleccionar o compartir.</p></article>
+      <article><span class="value-icon lilac">☺</span><h2>Pequeños tesoros</h2><p>Detalles sencillos que se convierten en grandes recuerdos.</p></article>
+    </section>
+
+    <section class="catalog-section section-wrap" id="catalogo">
+      <div class="section-heading">
+        <span class="eyebrow">ENCUENTRA TU SORPRESA</span>
+        <h2>¿Cuánto misterio quieres?</h2>
+        <p>Elige tu presupuesto y deja que la curiosidad haga el resto.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="filter-group" role="group" aria-label="Filtrar por precio">
+          <button class="filter-button active" data-filter="all">Todas</button>
+          <button class="filter-button" data-filter="500">Hasta $1.000</button>
+          <button class="filter-button" data-filter="2000">$1.001–$3.000</button>
+          <button class="filter-button" data-filter="4000">Desde $3.001</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="productSearch" type="search" placeholder="Buscar una sorpresa..." aria-label="Buscar productos"></label>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-price="500" data-name="mini clasica">
+          <div class="product-visual visual-kraft"><span class="product-badge">La clásica</span><div class="mini-bag"><span>?</span></div><span class="visual-doodle">✦</span></div>
+          <div class="product-info"><div class="product-type">PARA DARTE UN GUSTICO</div><h3>Mini Misterio</h3><p>Pequeños detalles como stickers, dulces empacados, mini papelería o un accesorio sorpresa.</p><div class="product-bottom"><strong>$500</strong><button class="add-button" data-id="mini" aria-label="Agregar Mini Misterio al carrito">Agregar <span>+</span></button></div></div>
+        </article>
+        <article class="product-card" data-price="1000" data-name="bolsita clasica retro">
+          <div class="product-visual visual-pink"><span class="product-badge">Para coleccionar</span><div class="mini-bag bag-pink"><span>?</span></div><span class="visual-doodle">♡</span></div>
+          <div class="product-info"><div class="product-type">UN CLÁSICO DEL BAZAR</div><h3>Bolsita Clásica</h3><p>Una combinación sorpresa de papelería, stickers, llaveros sencillos, mini juguetes o dulces.</p><div class="product-bottom"><strong>$1.000</strong><button class="add-button" data-id="clasica">Agregar <span>+</span></button></div></div>
+        </article>
+        <article class="product-card" data-price="2000" data-name="nostalgia retro">
+          <div class="product-visual visual-yellow"><span class="product-badge">Favorita</span><div class="mini-bag bag-yellow"><span>?</span></div><span class="visual-doodle">✳</span></div>
+          <div class="product-info"><div class="product-type">UN VIAJE EN EL TIEMPO</div><h3>Retro Mix</h3><p>Accesorios coloridos, mini libretas, calcomanías, juguetes pequeños y otros recuerdos estilo retro.</p><div class="product-bottom"><strong>$2.000</strong><button class="add-button" data-id="retro">Agregar <span>+</span></button></div></div>
+        </article>
+        <article class="product-card" data-price="3000" data-name="tesoro especial regalo">
+          <div class="product-visual visual-mint"><span class="product-badge">Un poquito más</span><div class="mini-bag bag-mint"><span>?</span></div><span class="visual-doodle">☆</span></div>
+          <div class="product-info"><div class="product-type">UN TESORO POR DESCUBRIR</div><h3>Tesoro Especial</h3><p>Puede incluir un accesorio más especial, papelería bonita, charms, llaveros o una pieza coleccionable.</p><div class="product-bottom"><strong>$3.000</strong><button class="add-button" data-id="tesoro">Agregar <span>+</span></button></div></div>
+        </article>
+        <article class="product-card" data-price="5000" data-name="premium sorpresa regalo">
+          <div class="product-visual visual-lilac"><span class="product-badge">Para regalar</span><div class="mini-bag bag-lilac"><span>?</span></div><span class="visual-doodle">♡</span></div>
+          <div class="product-info"><div class="product-type">SORPRESA CON EXTRA MAGIA</div><h3>Misterio Premium</h3><p>Una selección más amplia de accesorios, artículos de colección, papelería y pequeños regalos.</p><div class="product-bottom"><strong>$5.000</strong><button class="add-button" data-id="premium">Agregar <span>+</span></button></div></div>
+        </article>
+        <article class="product-card" data-price="10000" data-name="caja sorpresa especial">
+          <div class="product-visual visual-orange"><span class="product-badge">La experiencia completa</span><div class="mini-bag bag-orange"><span>?</span></div><span class="visual-doodle">✦</span></div>
+          <div class="product-info"><div class="product-type">MÁS COSITAS, MÁS EMOCIÓN</div><h3>Gran Sorpresa</h3><p>Un paquete con varias piezas sorpresa: accesorios, artículos coleccionables, papelería y más.</p><div class="product-bottom"><strong>$10.000</strong><button class="add-button" data-id="gran">Agregar <span>+</span></button></div></div>
+        </article>
+      </div>
+      <p class="catalog-note">*Los artículos mencionados son ejemplos de lo que podría incluir cada bolsita; el contenido es aleatorio y puede variar según disponibilidad. Los precios son editables y deben confirmarse antes de publicar.</p>
+    </section>
+
+    <section class="how-section" id="como-funciona">
+      <div class="section-heading">
+        <span class="eyebrow">FÁCIL, DIVERTIDO Y MISTERIOSO</span>
+        <h2>¿Cómo funciona?</h2>
+      </div>
+      <div class="steps-grid">
+        <article><span class="step-number">1</span><div class="step-symbol">♡</div><h3>Elige tu bolsita</h3><p>Selecciona el precio y la cantidad que quieres.</p></article>
+        <article><span class="step-number">2</span><div class="step-symbol">✉</div><h3>Haz tu pedido</h3><p>Envía tu carrito o consulta por WhatsApp.</p></article>
+        <article><span class="step-number">3</span><div class="step-symbol">🎁</div><h3>Recibe la sorpresa</h3><p>Preparamos tus bolsitas con mucho cariño.</p></article>
+        <article><span class="step-number">4</span><div class="step-symbol">☺</div><h3>¡Abre y disfruta!</h3><p>Descubre qué pequeño tesoro te tocó.</p></article>
+      </div>
+    </section>
+
+    <section class="wholesale-section" id="mayoristas">
+      <div class="wholesale-copy">
+        <span class="eyebrow">¿TIENES UN EMPRENDIMIENTO O UN EVENTO?</span>
+        <h2>La sorpresa también se comparte <span>por montones.</span></h2>
+        <p>Preparamos pedidos al por mayor para tiendas independientes, bazares, emprendimientos, cumpleaños, fiestas infantiles, celebraciones y eventos especiales.</p>
+        <ul><li>✦ Cantidades personalizadas</li><li>✦ Opciones según presupuesto</li><li>✦ Posibilidad de preparar bolsitas para eventos</li><li>✦ Consulta por empaques o temáticas especiales</li></ul>
+      </div>
+      <form class="wholesale-form" id="wholesaleForm">
+        <h3>Cuéntanos tu idea</h3>
+        <p>Completa estos datos y prepara tu solicitud para WhatsApp.</p>
+        <label for="bulkName">Tu nombre o negocio</label><input id="bulkName" name="name" required placeholder="Ej. Tienda Arcoíris">
+        <label for="bulkType">¿Para qué las necesitas?</label>
+        <select id="bulkType" name="type" required><option value="">Selecciona una opción</option><option>Negocio o tienda independiente</option><option>Cumpleaños o fiesta</option><option>Evento escolar</option><option>Evento corporativo</option><option>Otro evento</option></select>
+        <div class="form-row"><div><label for="bulkQuantity">Cantidad aproximada</label><input id="bulkQuantity" name="quantity" type="number" min="10" required placeholder="Ej. 50"></div><div><label for="bulkBudget">Presupuesto por bolsita</label><select id="bulkBudget" name="budget" required><option value="">Elige</option><option>$500–$1.000</option><option>$1.001–$3.000</option><option>$3.001–$5.000</option><option>Más de $5.000</option><option>Por definir</option></select></div></div>
+        <label for="bulkDetails">Detalles (opcional)</label><textarea id="bulkDetails" name="details" rows="3" placeholder="Fecha, temática, colores o ideas..."></textarea>
+        <button class="button button-dark" type="submit">Preparar encargo por WhatsApp ↗</button>
+        <small>El envío del formulario abrirá WhatsApp con tu solicitud; el pedido no se confirma hasta acordar precio, disponibilidad y entrega.</small>
+      </form>
+    </section>
+
+    <section class="closing-banner">
+      <div class="closing-doodles" aria-hidden="true">✦　♡　✳</div>
+      <p>Porque a veces, la mayor emoción...</p>
+      <h2>es no saber qué vas a encontrar.</h2>
+      <a class="button button-pink" href="#catalogo">Encuentra tu sorpresa →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <a href="#inicio" class="footer-logo">Be <b>Surprised</b> <span>?</span></a>
+    <p>Pequeñas bolsitas, grandes emociones.</p>
+    <div class="footer-links"><a href="#catalogo">Catálogo</a><a href="#como-funciona">Cómo funciona</a><a href="#mayoristas">Pedidos al por mayor</a></div>
+    <p class="copyright">© <span id="year"></span> Be Surprised. Todos los derechos reservados.</p>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Tu carrito" aria-hidden="true">
+    <div class="cart-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Tu carrito</h2></div><button class="close-cart" id="closeCart" aria-label="Cerrar carrito">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Tu carrito está vacío... ¡llénalo de misterio!</p></div>
+    <div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><button class="button button-dark" id="checkoutButton">Pedir por WhatsApp ↗</button><small>El precio no incluye envío. Confirma disponibilidad antes de pagar.</small></div>
+  </aside>
+</body>
+</html>
